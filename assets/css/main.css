@@ -1,0 +1,54 @@
+/* sizes */
+#main-wrap > div { min-height: 450px; }
+
+#header{
+    min-height: 40px;
+}
+
+/*div {
+  margin: 20px 20px;
+}*/
+
+.info { min-height: 80px; }
+
+body {
+    margin-bottom:50px;
+}
+
+#footer {
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 50px;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+}
+
+#content-wrap {
+    float: right;
+    width: 70%;
+}
+
+#info-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+.info {
+    width: 50%;
+    float: left;
+}
