@@ -1,0 +1,190 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: rgb(9, 67, 135);
+}
+
+.section {
+  width: 80vw;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+#whois {
+  padding: 100px 0px 0px 0px;
+}
+
+.whoishead {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding-top: 55px;
+}
+
+.name {
+  font-size: 40px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.name em {
+  font-size: 15px;
+  color: #878616;
+  font-style: italic;
+}
+
+.occupation {
+  font-size: 18px;
+  color: #0f86a1;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+
+.myface {
+  width: 200px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+.myface img{
+  height: 140px;
+  width: 140px;
+  border-radius: 80px;
+  box-shadow: 0px 2px 8px 0px rgba(#000000, 0.2);
+  float: left;
+}
+.social-icon.fa {
+  padding-top: 35px;
+  font-size: 60px;
+}
+
+.whoisbody {
+  width: 100%;
+  font-size: 18px;
+  padding: 30px 0px 0px 0px;
+  margin: 0px;
+}
+
+
+#projects {
+}
+#projects .title {
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+#projects .subtitle {
+  margin: 0.25em 0 0 0;
+}
+#projects .content {
+  margin: 0px 10px 0px 10px;
+  margin-top: 20px;
+}
+
+
+#experience {
+}
+#experience .title {
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+#experience .subtitle {
+  margin: 0.25em 0 0 0;
+}
+#experience .content {
+  margin: 0px 10px 0px 10px;
+  margin-top: 20px;
+}
+
+
+#keyword-index {
+}
+#keyword-index .title {
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+#keyword-index .subtitle {
+  margin: 0.25em 0 0 0;
+}
+#keyword-index .content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#keyword-index p {
+  margin: 0 0 0 0;
+}
+
+
+#hobbies {
+  margin-bottom: 200px;
+}
+#hobbies .title {
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
+#hobbiesx .subtitle {
+  margin: 0.25em 0 0 0;
+}
+#hobbies .content {
+  margin: 0px 10px 0px 10px;
+}
+
+
+.infoblock {
+  border-radius: 12px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 66, 128, 0.2);
+  position: relative;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 15px 0px;
+}
+.infoblock .label {
+  font-size: 20px;
+  color: #0f86a1;
+  padding: 0px 20px 0px 20px;
+}
+.infoblock .status {
+  font-size: 14px;
+  color: #8e9333;
+  padding: 0px 20px 5px 20%;
+}
+.infoblock .tools {
+  float: right;
+  font-size: 14px;
+  color: #999A9A;
+  padding: 0px 20px 5px 20px;
+}
+.infoblock .description {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0px 20px 0px 20px;
+}
+.infoblock p {
+  display: inline-block;
+  padding-top: 1px;
+  margin: 0;
+}
+.infoblock .label a:after {
+  content: '\f14c';
+  color: rgba(40, 73, 103, 0.86);
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin:0px 0px 0px 10px;
+  text-decoration:none;
+}
