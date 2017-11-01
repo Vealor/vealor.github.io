@@ -16,7 +16,6 @@ a:hover {
 }
 
 .section {
-  /*width: 80vw;*/
   max-width: 720px;
   padding: 0px 10px 0px 10px;
   margin: auto;
@@ -217,7 +216,6 @@ a:hover {
 }
 .infoblock .status {
   font-size: 14px;
-  position: absolute;
   color: #8e9333;
   padding: 0px 20px 5px 20%;
 }
