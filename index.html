@@ -6,11 +6,33 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/main.css">
     <script src="https://use.fontawesome.com/5b9b3be893.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <meta property="og:title" content="Jakob R" />
     <meta property="og:type" content="digital resume" />
     <meta property="og:url" content="http://www.jakobr.me" />
+
+    <script type="text/javascript">
+      (function($) {
+        $(document).ready( function() {
+          $("#header").hide();
+          var topOfOthDiv = $("#pop").offset().top;
+          $(window).scroll(function() {
+            if($(window).scrollTop() > topOfOthDiv) {
+              $("#header").fadeIn();
+            }else{
+              $("#header").fadeOut();
+            }
+          });
+        });
+      })(jQuery);
+    </script>
   </head>
   <body>
+    <div id="header" class="section">
+      <img class="myface" src="assets/head.png" alt="my face is here">
+      <p>Jakob Roberts</p>
+    </div>
+
     <div id="whois" class="section">
       <div class="myface">
         <img class="myface" src="assets/head.png" alt="my face is here">
@@ -23,7 +45,7 @@
         <p class="name">Jakob Roberts <em>&lt;Vealor&gt;</em></p>
         <p class="occupation">Software Engineering Student</p>
       </div>
-      <div class="whoisbody">
+      <div id="pop" class="whoisbody">
         <p class="base-text">Hi, I'm Jakob.  I'm a Software Engineering student at the University of Victoria specializing in Communication and Networks.</p>
         <p class="base-text">My software passions are network security, distributed systems, and language processing.  I always look to tackle a challenge and try to solve the problem with new tools and techniques to best suit the situation.</p>
         <p class="base-text">I am currently learning Elixir.  I enjoy programming, motorcycles, gaming, and learning ways to be faster and more efficient at what I do.</p>
