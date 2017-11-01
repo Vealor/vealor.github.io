@@ -6,11 +6,11 @@
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/main.css">
     <script src="https://use.fontawesome.com/5b9b3be893.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta property="og:title" content="Jakob R" />
     <meta property="og:type" content="digital resume" />
     <meta property="og:url" content="http://www.jakobr.me" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="text/javascript">
       (function($) {
         $(document).ready( function() {
@@ -23,6 +23,33 @@
               $("#header").fadeOut();
             }
           });
+        });
+      })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+      (function($) {
+        $(document).ready( function() {
+          $('#education').children('.title').on('click', function () {
+  	        $('#educationcontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
+          $('#projects').children('.title').on('click', function () {
+  	        $('#projectscontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
+          $('#experience').children('.title').on('click', function () {
+  	        $('#experiencecontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
+          $('#keyword-index').children('.title').on('click', function () {
+  	        $('#keyword-indexcontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
+          $('#hobbies').children('.title').on('click', function () {
+  	        $('#hobbiescontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
         });
       })(jQuery);
     </script>
@@ -46,16 +73,16 @@
         <p class="occupation">Software Engineering Student</p>
       </div>
       <div id="pop" class="whoisbody">
-        <p class="base-text">Hi, I'm Jakob.  I'm a Software Engineering student at the University of Victoria specializing in Communication and Networks.</p>
-        <p class="base-text">My software passions are network security, distributed systems, and language processing.  I always look to tackle a challenge and try to solve the problem with new tools and techniques to best suit the situation.</p>
-        <p class="base-text">I am currently learning Elixir.  I enjoy programming, motorcycles, gaming, and learning ways to be faster and more efficient at what I do.</p>
+        <p>Hi, I'm Jakob.  I'm a Software Engineering student at the University of Victoria specializing in Communication and Networks.</p>
+        <p>My software passions are network security, distributed systems, and language processing.  I always look to tackle a challenge and try to solve the problem with new tools and techniques to best suit the situation.</p>
+        <p>I am currently learning Elixir.  I enjoy programming, motorcycles, gaming, and learning ways to be faster and more efficient at what I do.</p>
       </div>
       <br><hr><br>
     </div>
 
     <div id="education" class="section">
-      <p class="title">Education &amp; Certifications</p>
-      <div class="content">
+      <p class="title">Education &amp; Certifications <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+      <div id="educationcontent" class="content">
 
         <div class="infoblock">
           <!-- <p class="label"><a target="_blank" href="https://github.com/vealor/Draut">Draut and Flagon</a></p> -->
@@ -72,8 +99,6 @@
               Operating Systems, Requirements Engineering, Design and Analysis
               of Real-time Systems, Switching &amp; Network Traffic &amp; QoS
             </p>
-
-
           </div>
         </div>
 
@@ -82,8 +107,8 @@
     </div>
 
     <div id="projects" class="section">
-      <p class="title">Projects</p>
-      <div class="content">
+      <p class="title">Projects <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+      <div id="projectscontent" class="content">
 
         <div class="infoblock">
           <!-- <p class="label"><a target="_blank" href="https://github.com/vealor/Draut">Draut and Flagon</a></p> -->
@@ -161,8 +186,8 @@
     </div>
 
     <div id="experience" class="section">
-      <p class="title">Work Experience</p>
-      <div class="content">
+      <p class="title">Work Experience <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+      <div id="experiencecontent"class="content">
 
         <div class="infoblock">
           <p class="label">Roboticist (CO-OP) @ IRC ATR - Japan</p>
@@ -208,14 +233,14 @@
         </div>
 
       </div>
-      <br><br><hr><br><br>
+      <br><hr><br>
     </div>
 
     <div id="keyword-index" class="section">
-      <p class="title">Knowledge Keywords</p>
+      <p class="title">Knowledge Keywords <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <p class="subtitle">Just a running list of things I have learned to use or become familiar with.</p>
       <br>
-      <div class="content">
+      <div id="keyword-indexcontent" class="content">
         <p>Python, Shell Scripting, C, C++, Elixir, Java, GoLang, Javascript, ARM, G-code</p>
         <p>Domain and DNS services, NAT tools, Wireshark, nmap, Maltego</p>
         <p>Django, Phoenix, Bootstrap, NodeJS, MEAN, HTML, CSS</p>
@@ -225,13 +250,13 @@
         <p>Linux(multiple distributions), Unix, OS X, Windows</p>
         <p>English/French Bilingual, Beginner Japanese</p>
       </div>
-      <br><br><hr><br><br>
+      <br><hr><br>
     </div>
 
     <div id="hobbies" class="section">
-      <p class="title">Hobbies</p>
+      <p class="title">Hobbies <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <p>This is a small dump of websites I frequent and things that I am interested in.</p>
-      <ul>
+      <ul id="hobbiescontent">
         <li><a target="_blank" href="https://news.ycombinator.com/">https://news.ycombinator.com/</a></li>
         <li><a target="_blank" href="https://www.instagram.com/vealor13/">Instagram</a></li>
         <li><a target="_blank" href="https://medium.com/">https://medium.com/</a></li>
