@@ -226,13 +226,14 @@ a:hover {
   font-size: 14px;
   color: #8e9333;
   padding: 0px 20px 5px 20px;
+  min-width: 20%
 }
 .infoblock .tools {
   float: left;
   font-size: 14px;
   color: #999A9A;
   padding: 0px 20px 5px 20px;
-  min-width: 70%;
+  min-width: 60%;
 }
 .infoblock .description {
   display: inline-block;
