@@ -11,6 +11,7 @@
     <meta property="og:type" content="digital resume" />
     <meta property="og:url" content="http://www.jakobr.me" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <script type="text/javascript">
       (function($) {
         $(document).ready( function() {
@@ -29,23 +30,29 @@
 
     <script type="text/javascript">
       (function($) {
+
         $(document).ready( function() {
+          //EDUCATION
           $('#education').children('.title').on('click', function () {
   	        $('#educationcontent').slideToggle();
             $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
     	    });
-          $('#projects').children('.title').on('click', function () {
-  	        $('#projectscontent').slideToggle();
-            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
-    	    });
+          //WORK_EXPERIENCE
           $('#experience').children('.title').on('click', function () {
   	        $('#experiencecontent').slideToggle();
             $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
     	    });
+          //PROJECTS
+          $('#projects').children('.title').on('click', function () {
+  	        $('#projectscontent').slideToggle();
+            $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+    	    });
+          //KEYWORDS
           $('#keyword-index').children('.title').on('click', function () {
   	        $('#keyword-indexcontent').slideToggle();
             $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
     	    });
+          //HOBBIES
           $('#hobbies').children('.title').on('click', function () {
   	        $('#hobbiescontent').slideToggle();
             $(this).children('.fa').toggleClass('fa-chevron-down fa-chevron-up');
@@ -53,6 +60,7 @@
         });
       })(jQuery);
     </script>
+
   </head>
   <body>
     <div id="header" class="section">
@@ -60,6 +68,7 @@
       <p>Jakob Roberts</p>
     </div>
 
+    <!-- HEADER -->
     <div id="whois" class="section">
       <div class="myface">
         <img class="myface" src="assets/head.png" alt="my face is here">
@@ -80,6 +89,7 @@
       <br><hr><br>
     </div>
 
+    <!-- EDUCATION -->
     <div id="education" class="section">
       <p class="title">Education &amp; Certs <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <div id="educationcontent" class="content">
@@ -102,10 +112,101 @@
           </div>
         </div>
 
+        <div class="infoblock">
+          <p class="label"><a target="_blank" href="https://www.coursera.org/learn/neural-networks">Neural Networks for Machine Learning - Coursera</a></p>
+          <div class="information">
+            <p class="status">Dec 2017 – Present</p>
+            <p class="tools">Python</p>
+          </div>
+          <div class="description">
+            <p>Learned about different types of neural networks and their benefits.</p>
+            <p>Put into practice some of the algorithms spoken about.</p>
+            </p>
+          </div>
+        </div>
+
+        <div class="infoblock">
+          <p class="label"><a target="_blank" href="https://www.codecademy.com/pro/intensive/test-driven-development">Test Driven Development - Codecademy</a></p>
+          <div class="information">
+            <p class="status">Dec 2017 – Jan 2018</p>
+            <p class="tools">Javascript | Mocha | NodeJS | MongoDB</p>
+          </div>
+          <div class="description">
+            <p>Created test cases for example websites to practice the red green TDD cycle.</p>
+            <p>Finished a capstone project with full test suite for managing and displaying videos in a browser.</p>
+          </div>
+        </div>
+
+        <div class="infoblock">
+          <p class="label"><a target="_blank" href="https://www.udemy.com/python-for-offensive-security-practical-course/learn/v4/overview">Python For Offensive PenTest: A Complete Practical Course - Udemy</a></p>
+          <div class="information">
+            <p class="status">Nov 2017 – Jan 2018</p>
+            <p class="tools">Python</p>
+          </div>
+          <div class="description">
+            <p>Practiced creating reverse shells using python to extract data from a target system.</p>
+            <p>Learned about privilege escalation, creating keyloggers, and various network bypasses.</p>
+          </div>
+        </div>
+
       </div>
       <br><hr><br>
     </div>
 
+    <!-- WORK EXPERIENCE -->
+    <div id="experience" class="section">
+      <p class="title">Work Experience <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
+      <div id="experiencecontent"class="content">
+
+        <div class="infoblock">
+          <p class="label">Roboticist (CO-OP) @ IRC ATR - Japan</p>
+          <div class="information">
+            <p class="status">June 2017 - Present</p>
+            <p class="tools">Google Cloud API | C | C++ | Java | Python | Bash | ROS</p>
+          </div>
+          <div class="description">
+            <p>Created an asynchronous voice recognition system that recognises both Japanese and English.</p>
+            <p>Became proficient at debugging/diagnosing hardware and software issues in networked real-time systems.</p>
+            <p>Improved upon a system that allows a robot to walk alongside and interact with a human.</p>
+            <p>Assisted in experimentation for data in the creation of research papers.</p>
+            <p>Used sensors such as Velodyne LiDAR HDL-32E, and Hokuyo UTM-30LX.</p>
+            <p>Worked in a multicultural environment with many international researchers.</p>
+          </div>
+        </div>
+
+        <div class="infoblock">
+          <p class="label">Security Analyst (CO-OP) @ Information Security Branch, MTICS, BC Gov</p>
+          <div class="information">
+            <p class="status">Sept 2015 – Dec 2015</p>
+            <p class="tools">bash | linux | python | django | celery | postgresql | redisdb</p>
+          </div>
+          <div class="description">
+            <p>Created a web-app with Python and Django to increase possible threat detection rate through monitoring.</p>
+            <p>Monitored DNS servers, website content, and other potential threats to organizational assets.</p>
+            <p>Excelled in a multicultural and multi-skilled government environment taking advantage of others’ expertise.</p>
+            <p>Developed skills and knowledge with networking tools and infrastructure, and Linux system hardening.</p>
+          </div>
+        </div>
+
+        <div class="infoblock">
+          <p class="label">Welder/Fabricator/3D Designer @ Diamond Gear Industrial Manufacturing</p>
+          <div class="information">
+            <p class="status">Dec 2010 – June 2013</p>
+            <p class="tools">MIG | TIG | Stainless | Copper | g-code | CNC</p>
+          </div>
+          <div class="description">
+            <p>Led projects as the primary welder, the shop foreman, and the chief 3D designer.</p>
+            <p>Met strict deadlines and ensured exceptional production quality for clients.</p>
+            <p>Designed and fabricated high voltage switchgear.</p>
+            <p>Developed strong problem solving skills in a fast paced prototyping environment.</p>
+          </div>
+        </div>
+
+      </div>
+      <br><hr><br>
+    </div>
+
+    <!-- PROJECTS -->
     <div id="projects" class="section">
       <p class="title">Projects <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <div id="projectscontent" class="content">
@@ -124,7 +225,8 @@
         </div>
 
         <div class="infoblock">
-          <p class="label"><a target="_blank" href="https://github.com/maipa/maipa">Maipa - Personal Assistant</a></p>
+          <!-- <p class="label"><a target="_blank" href="https://github.com/maipa/maipa">Maipa - Personal Assistant</a></p> -->
+          <p class="label">Maipa - Personal Assistant</p>
           <div class="information">
             <p class="status">Ongoing</p>
             <p class="tools">python | google&nbsp;cloud&nbsp;speech | linux</p>
@@ -181,54 +283,15 @@
           </div>
         </div>
 
-      </div>
-      <br><hr><br>
-    </div>
-
-    <div id="experience" class="section">
-      <p class="title">Work Experience <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
-      <div id="experiencecontent"class="content">
-
         <div class="infoblock">
-          <p class="label">Roboticist (CO-OP) @ IRC ATR - Japan</p>
+          <p class="label">Microsoft College Coding Competition</p>
           <div class="information">
-            <p class="status">June 2017 - Present</p>
-            <p class="tools">C | C++ | Java | Python | Bash | ROS</p>
+            <p class="status">February 2015</p>
+            <p class="tools">python</p>
           </div>
           <div class="description">
-            <p>Became proficient at debugging/diagnosing hardware and software issues in networked real-time systems.</p>
-            <p>Improved upon a system that allows a robot to walk alongside and interact with a human.</p>
-            <p>Assisted in experimentation for data in the creation of research papers.</p>
-            <p>Used sensors such as Velodyne LiDAR HDL-32E, and Hokuyo UTM-30LX.</p>
-            <p>Worked in a multicultural environment with many international researchers.</p>
-          </div>
-        </div>
-
-        <div class="infoblock">
-          <p class="label">Security Analyst (CO-OP) @ Information Security Branch, MTICS, BC Gov</p>
-          <div class="information">
-            <p class="status">Sept 2015 – Dec 2015</p>
-            <p class="tools">bash | linux | python | django | celery | postgresql | redisdb</p>
-          </div>
-          <div class="description">
-            <p>Created a web-app with Python and Django to increase possible threat detection rate through monitoring.</p>
-            <p>Monitored DNS servers, website content, and other potential threats to organizational assets.</p>
-            <p>Excelled in a multicultural and multi-skilled government environment taking advantage of others’ expertise.</p>
-            <p>Developed skills and knowledge with networking tools and infrastructure, and Linux system hardening.</p>
-          </div>
-        </div>
-
-        <div class="infoblock">
-          <p class="label">Welder/Fabricator/3D Designer @ Diamond Gear Industrial Manufacturing</p>
-          <div class="information">
-            <p class="status">Dec 2010 – June 2013</p>
-            <p class="tools">MIG | TIG | Stainless | Copper | g-code | CNC</p>
-          </div>
-          <div class="description">
-            <p>Led projects as the primary welder, the shop foreman, and the chief 3D designer.</p>
-            <p>Met strict deadlines and ensured exceptional production quality for clients.</p>
-            <p>Designed and fabricated high voltage switchgear.</p>
-            <p>Developed strong problem solving skills in a fast paced prototyping environment.</p>
+            <p>Competed against other teams to complete a series of assigned coding challenges.</p>
+            <p>Used Python primarily and completed a program that detects the largest palindrome in a file.</p>
           </div>
         </div>
 
@@ -236,13 +299,15 @@
       <br><hr><br>
     </div>
 
+    <!-- KEYWORDS -->
     <div id="keyword-index" class="section">
       <p class="title">Knowledge Keywords <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <p class="subtitle">Just a running list of things I have learned to use or become familiar with.</p>
-      <br>
       <div id="keyword-indexcontent" class="content">
+        <br>
         <p>Python, Shell Scripting, C, C++, Elixir, Java, GoLang, Javascript, ARM, G-code</p>
-        <p>Domain and DNS services, NAT tools, Wireshark, nmap, Maltego</p>
+        <p>Domain and DNS services, NAT tools, Wireshark, nmap, netcat</p>
+        <p>OSINT, Maltego, metasploit, aircrack</p>
         <p>Django, Phoenix, Bootstrap, NodeJS, MEAN, HTML, CSS</p>
         <p>DigitalOcean, TravisCI, CodeCov, AWS, MongoDB</p>
         <p>Git, ROS, REGEX, Celery, Matlab, Postgresql, SVN, Vim, KVM, R, OMNeT++</p>
@@ -253,13 +318,23 @@
       <br><hr><br>
     </div>
 
+    <!-- HOBBIES -->
     <div id="hobbies" class="section">
       <p class="title">Hobbies <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
       <p class="subtitle">This is a small dump of websites I frequent and things that I am interested in.</p>
       <ul id="hobbiescontent">
+        <li><a target="_blank" href="https://www.hackthebox.eu">Hack The Box :: Penetration Testing Labs</a></li>
         <li><a target="_blank" href="https://news.ycombinator.com/">https://news.ycombinator.com/</a></li>
         <li><a target="_blank" href="https://www.instagram.com/vealor13/">Instagram</a></li>
         <li><a target="_blank" href="https://medium.com/">https://medium.com/</a></li>
+
+        <br>
+
+        <p>Interests:</p>
+        <p style="padding-left: 20px;">
+          Software security news, machine learning, voice recognition, electronic music, hacking on code, internet of things, gaming, movies, motorcycles, surfing.
+        </p>
+
       </ul>
 
     </div>
