@@ -79,6 +79,7 @@ a:hover {
   font-size: 15px;
   color: #878616;
   font-style: italic;
+  vertical-align: middle;
 }
 
 .occupation {
@@ -212,18 +213,26 @@ a:hover {
 .infoblock .label {
   font-size: 20px;
   color: #0f86a1;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px 5px 20px;
 }
+
+.infoblock .information {
+  width: 100%;
+  min-height: 21px;
+}
+
 .infoblock .status {
+  float: left;
   font-size: 14px;
   color: #8e9333;
-  padding: 0px 20px 5px 20%;
+  padding: 0px 20px 5px 20px;
 }
 .infoblock .tools {
-  float: right;
+  float: left;
   font-size: 14px;
   color: #999A9A;
   padding: 0px 20px 5px 20px;
+  min-width: 70%;
 }
 .infoblock .description {
   display: inline-block;
