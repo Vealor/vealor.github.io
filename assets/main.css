@@ -121,9 +121,9 @@ a:hover {
 .social-media-inner{
   position:absolute;
   /* 1 thing  */
-  margin-top: 55px;
+  /*margin-top: 55px;*/
   /* 2 things */
-  /*margin-top: 40px;*/
+  margin-top: 40px;
   /* 3 things */
   /*margin-top: 25px;*/
 }
