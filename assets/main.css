@@ -35,14 +35,16 @@ a:hover {
   left: 0;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
   height: 50px;
   width: 100%;
   background-color: #f2f2f2;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 66, 128, 0.2);
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 66, 128, 0.6);
 }
 #header p {
+  font-family: 'AP';
   position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -51,14 +53,15 @@ a:hover {
   font-size: 25px;
   font-weight: bold;
   margin: 0px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 #header img{
-  margin-right: 30px;
+  margin-top: 3px;
+  margin-right: 21px;
   height: 45px;
   width: 45px;
-  border-radius: 80px;
-  box-shadow: 0px 2px 8px 0px rgba(#000000, 0.2);
+  border-radius: 90px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 66, 128, 0.4);
   float: right;
 
 }
