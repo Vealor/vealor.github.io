@@ -296,3 +296,7 @@ a:hover {
   margin:0px 0px 0px 10px;
   text-decoration:none;
 }
+
+#hobbiescontent {
+  list-style-type: circle;
+}
