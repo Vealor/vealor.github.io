@@ -100,6 +100,12 @@ a:hover {
   padding: 0px 0px 0px 0px;
   margin: 0px;
 }
+.location {
+  font-size: 16px;
+  color: #566163;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+}
 
 .myface {
   width: 200px;
@@ -126,9 +132,11 @@ a:hover {
   /* 1 thing  */
   /*margin-top: 55px;*/
   /* 2 things */
-  margin-top: 40px;
+  /* margin-top: 40px; */
   /* 3 things */
   /*margin-top: 25px;*/
+  /* 4 things */
+  margin-top: 10px;
 }
 
 .social-media-inner a{
