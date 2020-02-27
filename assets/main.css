@@ -257,6 +257,7 @@ a:hover {
 .infoblock .information {
   width: 100%;
   min-height: 21px;
+  margin-bottom: 1px;
 }
 
 .infoblock .status {
